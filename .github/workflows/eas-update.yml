@@ -20,8 +20,10 @@ jobs:
       - name: Install EAS CLI
         run: npm install -g eas-cli
 
-      - name: Authenticate with Expo
-        run: eas login --token ${{ secrets.EXPO_TOKEN }}
+      - name: Publish EAS Update
+        run: eas update --branch main
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
 
       - name: Publish EAS Update
         run: eas update --branch main
