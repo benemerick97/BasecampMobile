@@ -37,7 +37,7 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{ headerShown: false }}>
-        <Drawer.Screen name="HomeStack" component={HomeStack} />
+        <Drawer.Screen name="HomeStack test shit" component={HomeStack} />
         {/* Add more drawer items/screens here if needed */}
       </Drawer.Navigator>
     </NavigationContainer>
