@@ -21,9 +21,6 @@ jobs:
         run: npm install -g eas-cli
 
       - name: Publish EAS Update
-        run: eas update --branch main
+        run: eas update --branch main --message "Automated OTA update from GitHub Actions"
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-
-      - name: Publish EAS Update
-        run: eas update --branch main
